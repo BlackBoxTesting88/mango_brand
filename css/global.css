@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e8f4f8 50%, #e0f0f5 100%);
+  color: #1a1816;
+  font-family: "Nunito", system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 1rem;
+  }
+}
+
+.serif {
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+}
+.sans {
+  font-family: "Nunito", system-ui, sans-serif;
+}
+.elegant {
+  font-family: "Nunito", system-ui, sans-serif;
+  font-weight: 300;
+}
+
+/* Headlines - Modern Professional Font */
+h1,
+h1.serif,
+h2,
+h2.serif,
+h3,
+h3.serif,
+h4,
+h4.serif,
+h5,
+h5.serif,
+h6,
+h6.serif {
+  font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Specific font weights for each heading level */
+h1,
+h1.serif {
+  font-weight: 700;
+}
+
+h2,
+h2.serif {
+  font-weight: 600;
+}
+
+h3,
+h3.serif {
+  font-weight: 600;
+}
+
+h4,
+h4.serif {
+  font-weight: 600;
+}
+
+h5,
+h5.serif {
+  font-weight: 500;
+}
+
+h6,
+h6.serif {
+  font-weight: 500;
+}
+
+/* ========== MODERN BACKGROUND ========== */
+.luxury-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(135, 206, 235, 0.06) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(173, 216, 230, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(176, 224, 230, 0.04) 0%,
+      transparent 70%
+    ),
+    linear-gradient(135deg, #f0f8ff 0%, #e8f4f8 50%, #e0f0f5 100%);
+  animation: drift 30s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-1%) scale(1.02);
+  }
+}
+
+/* Subtle modern texture */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: -9;
+  pointer-events: none;
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* ========== WORLD MAP REMOVED - MODERN CLEAN BACKGROUND ========== */
+.pirate-map {
+  display: none;
+}
+
+/* ========== REVEAL ANIMATIONS ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.shown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== BOTTLE 3D EFFECT ========== */
+.bottle-container {
+  perspective: 1500px;
+  transform-style: preserve-3d;
+}
+
+.bottle-3d {
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.2));
+}
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  #bottleContainer {
+    min-height: 480px;
+  }
+  #bottleImg {
+    max-width: 90vw;
+  }
+}
+
+.bottle-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(212, 175, 55, 0.3),
+    transparent 70%
+  );
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ========== LOADING ANIMATION ========== */
+.shutter {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(
+    120% 120% at 50% 20%,
+    rgba(212, 175, 55, 0.08),
+    transparent 40%
+  );
+}
+
+.shutter__panel {
+  background: linear-gradient(135deg, #141211 0%, #1e1b19 60%, #2a2624 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+  transform: translateY(0);
+  animation: shutterUp 1.6s cubic-bezier(0.65, 0.02, 0.2, 1) forwards;
+}
+
+.shutter__logo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.shutter__logo-inner {
+  padding: 1rem 1.25rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), 0 0 60px rgba(212, 175, 55, 0.15);
+  transform: translateY(10px) scale(0.98);
+  opacity: 0;
+  animation: logoIntro 3.2s ease-out 0.25s both;
+}
+.shutter__logo-text {
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: clamp(24px, 5vw, 44px);
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 24px rgba(212, 175, 55, 0.25);
+}
+@keyframes logoIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.995);
+  }
+}
+
+@keyframes shutterUp {
+  to {
+    transform: translateY(-110%);
+  }
+}
+
+/* ========== SCROLL PROGRESS BAR ========== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #ff8c00);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 1000;
+  transition: transform 0.1s ease-out;
+}
+
+/* ========== FLOATING ELEMENTS ========== */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+.floating-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+  .testimonial-card {
+    padding: 1.25rem;
+  }
+  .slider-nav {
+    width: 36px;
+    height: 36px;
+  }
+  .slider-dots {
+    bottom: 12px;
+  }
+  h1.serif {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  #hero .inline-flex {
+    transform: scale(0.95);
+  }
+}

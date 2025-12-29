@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JoyFruits — Caribbean Luxury Rakia</title>
+    <meta
+      name="description"
+      content="Ultra-premium single-fruit mango rakia. Handcrafted in the Dominican Republic. An exclusive Caribbean treasure."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/logo/joyfruits-favicon.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/logo/joyfruits-icon.svg"
+    />
+    <meta name="theme-color" content="#D4AF37" />
+
+    <!-- ========== FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========== TAILWIND CSS ========== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1a1816",
+              parchment: "#F0F8FF",
+              parchmentDeep: "#E8F4F8",
+              brass: "#B8860B",
+              gold: "#D4AF37",
+              amber: "#FF8C00",
+              slate: "#4A4845",
+              cream: "#E0F0F5",
+            },
+            boxShadow: {
+              soft: "0 20px 60px rgba(0,0,0,.08)",
+              glow: "0 0 40px rgba(212,175,55,.2)",
+              luxury: "0 30px 80px rgba(0,0,0,.15)",
+              inner: "inset 0 2px 20px rgba(0,0,0,.05)",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              shimmer: "shimmer 3s ease-in-out infinite",
+              "fade-in": "fadeIn 1s ease-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              "scale-in": "scaleIn 0.6s ease-out",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              shimmer: {
+                "0%, 100%": { opacity: "1" },
+                "50%": { opacity: ".7" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(30px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              scaleIn: {
+                "0%": { transform: "scale(0.9)", opacity: "0" },
+                "100%": { transform: "scale(1)", opacity: "1" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ========== CUSTOM CSS FILES ========== -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/media-optimization.css" />
+  </head>
+  <body class="sans">
+    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ========== LOADING ANIMATION - ПРИВРЕМЕНО ИСКЉУЧЕНО ========== -->
+    <!--
+<div id="shutter" class="shutter" aria-hidden="true">
+  <div class="shutter__panel" style="animation-delay:.00s"></div>
+  <div class="shutter__panel" style="animation-delay:.14s"></div>
+  <div class="shutter__panel" style="animation-delay:.28s"></div>
+  <div class="shutter__panel" style="animation-delay:.42s"></div>
+  <div class="shutter__panel" style="animation-delay:.56s"></div>
+  <div class="shutter__panel" style="animation-delay:.70s"></div>
+  <div class="shutter__panel" style="animation-delay:.84s"></div>
+  <div class="shutter__panel" style="animation-delay:.98s"></div>
+  <div class="shutter__panel" style="animation-delay:1.12s"></div>
+  <div class="shutter__panel" style="animation-delay:1.26s"></div>
+  <div class="shutter__logo">
+    <div class="shutter__logo-inner">
+      <span class="shutter__logo-text">JoyFruits</span>
+    </div>
+  </div>
+</div>
+-->
+
+    <!-- ========== BACKGROUND ELEMENTS ========== -->
+    <div class="luxury-bg"></div>
+    <div class="pirate-map"></div>
+    <div class="grain"></div>
+
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <div id="header"></div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <div id="hero"></div>
+
+    <!-- ========== PROCESS SECTION ========== -->
+
+    <!-- ========== VOYAGE SECTION ========== -->
+    <div id="voyage"></div>
+
+    <!-- ========== PRODUCT SECTION ========== -->
+    <div id="product"></div>
+
+    <!-- ========== FLAVORS SECTION ========== -->
+    <div id="flavors"></div>
+
+    <div id="process"></div>
+
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <div id="gallery"></div>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <div id="testimonials"></div>
+
+    <!-- ========== CTA SECTION ========== -->
+    <div id="cta"></div>
+
+    <!-- ========== FOOTER ========== -->
+    <div id="footer"></div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="js/loader.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
