@@ -483,7 +483,9 @@ function initLanguageSwitcher() {
   }
 
   buttons.forEach((btn) => {
-    const targetLang = (btn.getAttribute("data-lang-switch") || "").toLowerCase();
+    const targetLang = (
+      btn.getAttribute("data-lang-switch") || ""
+    ).toLowerCase();
     if (!targetLang) return;
 
     if (targetLang === current) {
