@@ -1,0 +1,1550 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JoyFruits â€” Caribbean Luxury Rakia</title>
+    <meta name="description" content="Ultra-premium single-fruit mango rakia. Handcrafted in the Dominican Republic. An exclusive Caribbean treasure." />
+    <link rel="canonical" href="/en/" />
+    <link rel="alternate" hreflang="en" href="/en/" />
+    <link rel="alternate" hreflang="sr" href="/sr/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/joyfruits-favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/joyfruits-icon.svg" />
+    <meta name="theme-color" content="#D4AF37" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: '#1a1816',
+              parchment: '#F0F8FF',
+              parchmentDeep: '#E8F4F8',
+              brass: '#B8860B',
+              gold: '#D4AF37',
+              amber: '#FF8C00',
+              slate: '#4A4845',
+              cream: '#E0F0F5',
+            },
+            boxShadow: {
+              soft: '0 20px 60px rgba(0,0,0,.08)',
+              glow: '0 0 40px rgba(212,175,55,.2)',
+              luxury: '0 30px 80px rgba(0,0,0,.15)',
+              inner: 'inset 0 2px 20px rgba(0,0,0,.05)',
+            },
+            animation: {
+              float: 'float 6s ease-in-out infinite',
+              shimmer: 'shimmer 3s ease-in-out infinite',
+              'fade-in': 'fadeIn 1s ease-out',
+              'slide-up': 'slideUp 0.8s ease-out',
+              'scale-in': 'scaleIn 0.6s ease-out',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              shimmer: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '.7' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              scaleIn: {
+                '0%': { transform: 'scale(0.9)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/media-optimization.css" />
+  </head>
+  <body class="sans">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="luxury-bg"></div>
+    <div class="pirate-map"></div>
+    <div class="grain"></div><!-- ========================================
+     HEADER & NAVIGATION
+     ======================================== -->
+
+<!-- NAVIGATION -->
+<header class="sticky top-0 z-50 backdrop-blur-xl bg-parchment/80 border-b border-gold/10 shadow-sm">
+  <div class="pl-4 pr-4 md:pr-6 lg:pr-8 max-w-screen-2xl mx-auto">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-2 hover:opacity-80 transition-opacity group ml-0">
+        <img src="/assets/logo/joyfruits-compact.svg" 
+             alt="JoyFruits - Premium Caribbean Rakia" 
+             class="h-10 md:h-12 lg:h-14 w-auto transition-transform group-hover:scale-105">
+      </a>
+      
+      <div class="flex items-center gap-4">
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#product" class="nav-link">Product</a>
+          <a href="#process" class="nav-link">Craft</a>
+          <a href="#voyage" class="nav-link">The Voyage</a>
+          <a href="#testimonials" class="nav-link">Reviews</a>
+        </nav>
+
+        <!-- Desktop Language Switcher -->
+        <div class="hidden lg:flex items-center">
+          <div class="lang-switcher" role="group" aria-label="Language switcher">
+            <a class="lang-switcher__btn is-active" href="/en/">EN</a>
+            <a class="lang-switcher__btn" href="/sr/">SR</a>
+          </div>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-gold/10 hover:bg-gold/20 transition-colors" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="mobile-menu">
+  <button id="closeMenuBtn" class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="Close menu">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+  <a href="#product" class="mobile-menu-link" style="transition-delay: 0.1s">Product</a>
+  <a href="#process" class="mobile-menu-link" style="transition-delay: 0.15s">Craft</a>
+  <a href="#voyage" class="mobile-menu-link" style="transition-delay: 0.2s">The Voyage</a>
+  <a href="#testimonials" class="mobile-menu-link" style="transition-delay: 0.25s">Reviews</a>
+  <a href="#contact" class="btn btn-primary" style="transition-delay: 0.3s">Contact Us</a>
+  <div class="lang-switcher lang-switcher--mobile">
+    <a class="lang-switcher__btn is-active" href="/en/">EN</a>
+    <a class="lang-switcher__btn" href="/sr/">SR</a>
+  </div>
+</div>
+
+
+<!-- ========================================
+     HERO SECTION
+     ======================================== -->
+
+<section id="hero" class="relative overflow-hidden min-h-screen">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="/assets/images/PHOTO-2025-12-26-14-15-59.jpg" 
+         alt="JoyFruits Background" 
+         class="w-full h-full object-cover"
+         style="filter: brightness(0.9);">
+    <!-- Градијент - лево непрозирно → десно прозирно -->
+    <div class="absolute inset-0 bg-gradient-to-r from-parchment via-parchment/60 via-30% to-transparent"></div>
+  </div>
+  
+  <div class="relative z-10 h-full min-h-screen">
+    <div class="w-full max-w-2xl h-full">
+      
+      <!-- Hero Content - од врха до дна -->
+      <div class="reveal h-full min-h-screen">
+        <!-- Полупровидан оквир - пуна висина од врха до дна -->
+        <div class="backdrop-blur-sm bg-parchment/40 p-8 md:p-12 lg:p-16 rounded-r-3xl border-y border-r border-gold/30 shadow-luxury w-full h-full min-h-screen flex flex-col justify-start pt-20 md:pt-24 lg:pt-28">
+        
+        <!-- Садржај са лепим размацима -->
+        <div class="space-y-8">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 border border-gold/40">
+          <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+          <span class="text-sm font-semibold text-ink uppercase tracking-wider">Dominican Republic Luxury</span>
+    </div>
+
+        <h1 class="serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-ink leading-none">
+          Joy<br>
+          <span class="bg-gradient-to-r from-gold via-amber to-brass bg-clip-text text-transparent">Fruits</span>
+        </h1>
+        
+        <div class="space-y-4">
+        <p class="text-2xl md:text-3xl text-slate leading-relaxed max-w-xl elegant font-light">
+          Ultra-premium single-fruit rakia. Handcrafted from sun-ripened Caribbean mangoes. 
+          An exclusive liquid treasure.
+        </p>
+        
+        <p class="text-xl md:text-2xl text-ink/70 max-w-lg">
+          Small-batch distilled using traditional copper stills. Natural color, crystal clarity, 
+          unforgettable character.
+        </p>
+        </div>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="btn btn-primary">
+            Contact Us
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+      </svg>
+          </a>
+          <a href="#process" class="btn btn-secondary">
+            Discover the Craft
+          </a>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-6 max-w-md">
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent">40%</div>
+            <div class="text-sm text-slate mt-1">ABV</div>
+          </div>
+          <div class="text-center border-x border-gold/20">
+            <div class="text-3xl md:text-4xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent">700ml</div>
+            <div class="text-sm text-slate mt-1">Volume</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent">100%</div>
+            <div class="text-sm text-slate mt-1">Mango</div>
+          </div>
+        </div>
+        </div>
+        <!-- Крај садржаја -->
+        
+        </div>
+        <!-- Крај полупровидног оквира -->
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Decorative Elements -->
+  <div class="absolute top-20 right-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl z-0"></div>
+  <div class="absolute bottom-20 left-10 w-96 h-96 bg-amber/10 rounded-full blur-3xl z-0"></div>
+</section>
+
+
+<!-- ========================================
+     PROCESS SECTION
+     ======================================== -->
+
+<!-- CRAFT PROCESS SECTION (MODERN TIMELINE) -->
+<section
+  id="process"
+  class="py-20 md:py-32 bg-gradient-to-b from-parchment/50 to-parchmentDeep/30 process-section"
+>
+  <div class="wrap">
+    <div class="process-head reveal">
+      <p
+        class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3"
+      >
+        The Craft
+      </p>
+      <h2 class="serif text-5xl md:text-6xl lg:text-7xl font-black text-ink">
+        From Grove to Glass
+      </h2>
+    </div>
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-badge">01</div>
+        <div class="timeline-card">
+          <div class="timeline-num">Selection</div>
+          <div class="timeline-sub">
+            Handpicked from family groves outside Puerto Plata
+          </div>
+          <p class="text-ink/80">
+            Only the finest sun-ripened Keitt and Kent mangoes make the cut.
+            Each fruit is inspected at peak ripeness—when sugars and acidity
+            reach perfect balance—ensuring exceptional aromatics in every batch.
+          </p>
+          <div class="timeline-meta">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            100% Natural · Zero Additives
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-badge">02</div>
+        <div class="timeline-card">
+          <div class="timeline-num">Fermentation</div>
+          <div class="timeline-sub">Small-batch natural fermentation</div>
+          <p class="text-ink/80">
+            Fresh mango pulp ferments slowly over 10-14 days, developing complex
+            flavor compounds. Temperature-controlled rooms maintain ideal
+            conditions, allowing wild Caribbean yeasts to work their magic
+            naturally.
+          </p>
+          <div class="timeline-meta">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            10-14 Days · Controlled Environment
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-badge">03</div>
+        <div class="timeline-card">
+          <div class="timeline-num">Distillation</div>
+          <div class="timeline-sub">Traditional copper pot stills</div>
+          <p class="text-ink/80">
+            Double distillation in handcrafted copper alembic stills. The first
+            run captures the essence; the second refines it to crystal clarity.
+            Master distillers carefully separate heads, hearts, and
+            tails—keeping only the purest center cut.
+          </p>
+          <div class="timeline-meta">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              />
+            </svg>
+            Heart Cut Only · Premium Quality
+          </div>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-badge">04</div>
+        <div class="timeline-card">
+          <div class="timeline-num">Proofing</div>
+          <div class="timeline-sub">Limestone-filtered Caribbean water</div>
+          <p class="text-ink/80">
+            The spirit is gently proofed to 40% ABV using pure
+            limestone-filtered water from local springs. This final step
+            preserves the vibrant mango character while ensuring smooth,
+            balanced sipping.
+          </p>
+          <div class="timeline-meta">
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            40% ABV · Crystal Clarity
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     VOYAGE SECTION
+     ======================================== -->
+
+<!-- THE VOYAGE SECTION -->
+<section id="voyage" class="py-20 md:py-32 relative overflow-hidden">
+  <div class="wrap">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3">The Journey</p>
+      <h2 class="serif text-5xl md:text-6xl font-black text-ink mb-6">Caribbean to Europe</h2>
+      <p class="text-xl text-slate leading-relaxed elegant">
+        Following the historic trade winds, each shipment traces the legendary Dominican-to-Europe passage.
+      </p>
+          </div>
+    
+    <div class="grid lg:grid-cols-5 gap-8 items-stretch">
+      <!-- Gallery -->
+      <div class="lg:col-span-3 reveal">
+        <div class="glass-card shadow-luxury h-full">
+          <div class="relative rounded-2xl overflow-hidden" style="min-height: 600px; height: 100%;">
+            <div id="voyageSlider" class="slider h-full" aria-label="JoyFruits gallery">
+              <div class="slide is-active"><img src="/assets/images/PHOTO-2025-12-26-14-15-59.jpg" alt="JoyFruits Caribbean Craft" loading="lazy"></div>
+              <div class="slide"><img src="/assets/images/PHOTO-2025-12-26-14-16-23.jpg" alt="JoyFruits Production Process" loading="lazy"></div>
+              <div class="slide"><img src="/assets/images/PHOTO-2025-12-26-14-20-02.jpg" alt="JoyFruits Premium Quality" loading="lazy"></div>
+              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 16.45.00.png" alt="JoyFruits Production Scene" loading="lazy"></div>
+              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 17.51.50.png" alt="JoyFruits Distillery" loading="lazy"></div>
+              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 17.52.15.png" alt="JoyFruits Craftsmanship" loading="lazy"></div>
+              <button class="slider-nav prev" aria-label="Previous image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+              </button>
+              <button class="slider-nav next" aria-label="Next image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              <div id="voyageDots" class="slider-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Voyage Details -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="glass-card p-6 md:p-8 reveal">
+          <h3 class="serif text-2xl font-bold text-ink mb-4">Heritage Route</h3>
+          <p class="text-ink/80 leading-relaxed mb-6">
+            Inspired by 18th-century merchant voyages, our spirit travels the same Atlantic passage that connected 
+            the Caribbean with Europe—ensuring gradual maturation and consistent climate throughout transport.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                </svg>
+    </div>
+    <div>
+                <h4 class="font-semibold text-ink">Puerto Plata, DR</h4>
+                <p class="text-sm text-slate">Origin & Distillation</p>
+  </div>
+            </div>
+            
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+                </svg>
+    </div>
+    <div>
+                <h4 class="font-semibold text-ink">Small Batches</h4>
+                <p class="text-sm text-slate">Limited Production</p>
+    </div>
+            </div>
+            
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-ink">Quality Assured</h4>
+                <p class="text-sm text-slate">Every Bottle Inspected</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="glass-card p-6 reveal bg-gradient-to-br from-gold/5 to-amber/5">
+          <p class="text-sm text-gold font-semibold uppercase tracking-wider mb-2">Exclusive Availability</p>
+          <h4 class="serif text-xl font-bold text-ink mb-3">Reserve Your Allocation</h4>
+          <p class="text-sm text-ink/70 mb-4">Limited European distribution. Secure your bottle today.</p>
+          <a href="#contact" class="btn btn-primary w-full justify-center">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Decorative wave -->
+  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-parchmentDeep/20 to-transparent pointer-events-none"></div>
+</section>
+
+<!-- ========================================
+     PRODUCT SECTION
+     ======================================== -->
+
+<!-- PRODUCT SECTION -->
+<section
+  id="product"
+  class="py-20 md:py-32 bg-gradient-to-b from-parchmentDeep/20 to-parchment/50 relative"
+>
+  <div class="wrap">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p
+        class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3"
+      >
+        The Spirit
+      </p>
+      <h2 class="serif text-5xl md:text-6xl font-black text-ink mb-6">
+        Tasting Notes
+      </h2>
+      <p class="text-xl text-slate leading-relaxed elegant">
+        A sensory journey through Caribbean sunshine—captured in crystal
+        clarity.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Main Product Card -->
+      <div class="lg:col-span-2 glass-card p-8 md:p-12 reveal shadow-luxury">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="serif text-4xl md:text-5xl font-black text-ink mb-4">
+              Joy<br />
+              <span
+                class="bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent"
+                >Fruits</span
+              >
+            </h3>
+            <p class="text-lg text-ink/80 leading-relaxed mb-8">
+              Bright mango bouquet opens with tropical fruit, hints of citrus
+              zest, and subtle vanilla notes. Silky body delivers smooth warmth,
+              finishing clean with a delicate mineral edge.
+            </p>
+
+            <!-- Specs -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+              <div
+                class="text-center p-4 rounded-2xl bg-gold/5 border border-gold/20"
+              >
+                <div
+                  class="text-3xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent"
+                >
+                  40%
+                </div>
+                <div class="text-xs text-slate mt-1 uppercase tracking-wider">
+                  ABV
+                </div>
+              </div>
+              <div
+                class="text-center p-4 rounded-2xl bg-gold/5 border border-gold/20"
+              >
+                <div
+                  class="text-3xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent"
+                >
+                  700
+                </div>
+                <div class="text-xs text-slate mt-1 uppercase tracking-wider">
+                  ML
+                </div>
+              </div>
+              <div
+                class="text-center p-4 rounded-2xl bg-gold/5 border border-gold/20"
+              >
+                <div
+                  class="text-3xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent"
+                >
+                  4°C
+                </div>
+                <div class="text-xs text-slate mt-1 uppercase tracking-wider">
+                  Serve
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary w-full justify-center">
+              Reserve Your Bottle
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="floating-slow">
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-gold/20 to-amber/20 rounded-3xl blur-3xl"
+              ></div>
+              <img
+                src="/assets/bottles/Mango.png"
+                alt="JoyFruits Bottle"
+                class="relative w-full max-w-sm mx-auto"
+                style="filter: drop-shadow(0 20px 40px rgba(212, 175, 55, 0.3))"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tasting Profile -->
+      <div class="space-y-6 reveal">
+        <div class="glass-card p-6">
+          <h4 class="serif text-2xl font-bold text-ink mb-6">Flavor Profile</h4>
+
+          <!-- Modern Flavor Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="tasting-attribute">
+              <div class="tasting-icon">
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM16.5 8.25l-1.5 1.5m-1.5-1.5l1.5-1.5m1.5 1.5l-1.5-1.5m1.5 1.5l1.5 1.5M12 10.5h.008v.008H12V10.5z"
+                  />
+                </svg>
+              </div>
+              <div class="tasting-label">Sweetness</div>
+              <div class="tasting-value">Rich</div>
+            </div>
+
+            <div class="tasting-attribute">
+              <div class="tasting-icon">
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z"
+                  />
+                </svg>
+              </div>
+              <div class="tasting-label">Fruit Forward</div>
+              <div class="tasting-value">Intense</div>
+            </div>
+
+            <div class="tasting-attribute">
+              <div class="tasting-icon">
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                  />
+                </svg>
+              </div>
+              <div class="tasting-label">Smoothness</div>
+              <div class="tasting-value">Silky</div>
+            </div>
+
+            <div class="tasting-attribute">
+              <div class="tasting-icon">
+                <svg
+                  class="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <div class="tasting-label">Complexity</div>
+              <div class="tasting-value">Layered</div>
+            </div>
+          </div>
+
+          <!-- Flavor Notes -->
+          <div class="mt-6 pt-6 border-t border-gold/20">
+            <p class="text-sm text-ink/70 leading-relaxed">
+              <strong class="text-ink">Aroma:</strong> Bright tropical mango,
+              citrus zest, subtle vanilla<br />
+              <strong class="text-ink">Palate:</strong> Silky texture with warm,
+              balanced finish<br />
+              <strong class="text-ink">Finish:</strong> Clean with delicate
+              mineral notes
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 bg-gradient-to-br from-gold/5 to-amber/5">
+          <h4 class="serif text-xl font-bold text-ink mb-4">
+            Serving Suggestions
+          </h4>
+          <ul class="space-y-3 text-ink/80">
+            <li class="flex items-start gap-3">
+              <span class="text-gold text-xl">❄️</span>
+              <span
+                ><strong>Neat & chilled:</strong> Serve at 4°C in a tulip
+                glass</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold text-xl">🍸</span>
+              <span
+                ><strong>Classic cocktail:</strong> Perfect for premium mixed
+                drinks</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold text-xl">🍰</span>
+              <span
+                ><strong>After dinner:</strong> Pairs beautifully with
+                desserts</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     FLAVORS SECTION
+     ======================================== -->
+
+<section
+  id="flavors"
+  class="py-20 md:py-32 relative overflow-hidden bg-gradient-to-b from-parchment/50 to-parchmentDeep/30"
+>
+  <div class="wrap">
+    <!-- Section Header -->
+    <div class="text-center mb-16 reveal">
+      <h2 class="serif text-6xl md:text-7xl font-black mb-2">Our Flavors</h2>
+      <!-- <h3 class="serif text-4xl md:text-5xl font-black text-ink">COLLECTION</h3> -->
+    </div>
+
+    <!-- Flavor Cards Row -->
+    <div class="flavors-row">
+      <!-- Chinola -->
+      <div class="flavor-card reveal" data-flavor="chinola">
+        <div class="flavor-image-wrapper">
+          <img
+            src="/assets/images/flavors/chinola.jpg"
+            alt="Chinola"
+            class="flavor-image"
+            onerror="this.src='https://png.pngtree.com/png-clipart/20250502/original/pngtree-purple-passion-fruit-art-png-image_20933000.png'"
+          />
+          <button
+            class="flavor-btn"
+            data-flavor="chinola"
+            aria-label="View Chinola details"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flavor-content">
+          <h4 class="flavor-name">Chinola</h4>
+          <p class="flavor-description">
+            Exotic passion fruit with vibrant tropical notes
+          </p>
+        </div>
+        <!-- Flavor Modal Popup -->
+        <div class="flavor-modal-popup" data-modal="chinola">
+          <button class="flavor-modal-close" aria-label="Close modal">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="flavor-modal-body">
+            <div class="flavor-modal-image">
+              <img
+                class="modal-bottle-img"
+                src="/assets/bottles/Mango.png"
+                alt="Bottle"
+              />
+            </div>
+            <div class="flavor-modal-info">
+              <h3 class="modal-flavor-name">CHINOLA</h3>
+              <p class="modal-flavor-description">
+                Exotic passion fruit with vibrant tropical notes and refreshing
+                acidity.
+              </p>
+              <div class="modal-price">
+                <span class="modal-price-label">FROM</span>
+                <span class="modal-price-value">$49 / bottle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mango e Hierbas -->
+      <div class="flavor-card reveal" data-flavor="mango-hierbas">
+        <div class="flavor-image-wrapper">
+          <img
+            src="/assets/images/flavors/mango-hierbas.jpg"
+            alt="Mango e Hierbas"
+            class="flavor-image"
+            onerror="this.src='https://thumbs.dreamstime.com/b/image-features-ripe-mango-leaves-isolated-transparent-backdrop-403097521.jpg'"
+          />
+          <button
+            class="flavor-btn"
+            data-flavor="mango-hierbas"
+            aria-label="View Mango e Hierbas details"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flavor-content">
+          <h4 class="flavor-name">Mango e Hierbas</h4>
+          <p class="flavor-description">
+            Rich mango blended with aromatic herbs
+          </p>
+        </div>
+        <!-- Flavor Modal Popup -->
+        <div class="flavor-modal-popup" data-modal="mango-hierbas">
+          <button class="flavor-modal-close" aria-label="Close modal">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="flavor-modal-body">
+            <div class="flavor-modal-image">
+              <img
+                class="modal-bottle-img"
+                src="/assets/bottles/Mango.png"
+                alt="Bottle"
+              />
+            </div>
+            <div class="flavor-modal-info">
+              <h3 class="modal-flavor-name">MANGO E HIERBAS</h3>
+              <p class="modal-flavor-description">
+                Rich mango blended with aromatic herbs for a sophisticated,
+                layered profile.
+              </p>
+              <div class="modal-price">
+                <span class="modal-price-label">FROM</span>
+                <span class="modal-price-value">$52 / bottle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coconut -->
+      <div class="flavor-card reveal" data-flavor="red-orange">
+        <div class="flavor-image-wrapper">
+          <img
+            src="/assets/images/flavors/coconut.jpg"
+            alt="Red Orange"
+            class="flavor-image"
+            onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT06JHchzD28rLzsUZuQ_tqjuF7FiSEBUekLxljGcQiSA&s=10'"
+          />
+          <button
+            class="flavor-btn"
+            data-flavor="red-orange"
+            aria-label="View Red Orange details"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flavor-content">
+          <h4 class="flavor-name">Red Orange</h4>
+          <p class="flavor-description">
+            Creamy tropical red orange with smooth texture
+          </p>
+        </div>
+        <!-- Flavor Modal Popup -->
+        <div class="flavor-modal-popup" data-modal="red-orange">
+          <button class="flavor-modal-close" aria-label="Close modal">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="flavor-modal-body">
+            <div class="flavor-modal-image">
+              <img
+                class="modal-bottle-img"
+                src="/assets/bottles/Mango.png"
+                alt="Bottle"
+              />
+            </div>
+            <div class="flavor-modal-info">
+              <h3 class="modal-flavor-name">RED ORANGE</h3>
+              <p class="modal-flavor-description">
+                Creamy tropical red orange with smooth texture and natural
+                sweetness.
+              </p>
+              <div class="modal-price">
+                <span class="modal-price-label">FROM</span>
+                <span class="modal-price-value">$49 / bottle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     GALLERY / BEHIND THE SCENES SECTION
+     ======================================== -->
+
+<section
+  id="gallery"
+  class="py-20 md:py-32 relative overflow-hidden bg-gradient-to-b from-parchmentDeep/20 to-parchment/50"
+>
+  <div class="wrap">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p
+        class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3"
+      >
+        Behind the Scenes
+      </p>
+      <h2 class="serif text-5xl md:text-6xl font-black text-ink mb-6">
+        The Making of Excellence
+      </h2>
+      <p class="text-xl text-slate leading-relaxed elegant">
+        Step inside our Caribbean distillery and witness the artisanal craft
+        behind every bottle of JoyFruits.
+      </p>
+    </div>
+
+    <!-- Modern Video Slider -->
+    <div class="gallery-slider-container">
+      <div class="gallery-slider" id="gallerySlider">
+        <!-- Video 1 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                poster="/assets/images/PHOTO-2025-12-26-14-15-59.jpg"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-15-40.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Mango Selection</h3>
+                  <p class="gallery-description">
+                    Handpicking the finest Caribbean mangoes
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                poster="/assets/images/PHOTO-2025-12-26-14-16-23.jpg"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-16-49.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Distillation Process</h3>
+                  <p class="gallery-description">
+                    Traditional copper pot still in action
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                poster="/assets/images/PHOTO-2025-12-26-14-20-02.jpg"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-17-04.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Quality Control</h3>
+                  <p class="gallery-description">
+                    Every batch tested for perfection
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-20-01.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Final Inspection</h3>
+                  <p class="gallery-description">
+                    Ensuring luxury in every drop
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-20-02.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Ready to Ship</h3>
+                  <p class="gallery-description">
+                    From Dominican Republic to Europe
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="gallery-slide">
+          <div class="gallery-video-card">
+            <div class="gallery-video-wrapper">
+              <video
+                controls
+                muted
+                onvolumechange="this.muted=true"
+                preload="metadata"
+                class="gallery-video"
+              >
+                <source
+                  src="/assets/videos/VIDEO-2025-12-26-14-20-15.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <!-- <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <h3 class="gallery-title">Paradise in a Glass</h3>
+                  <p class="gallery-description">
+                    Dominican luxury captured in every bottle
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button
+        class="gallery-nav gallery-nav-prev"
+        id="galleryPrev"
+        aria-label="Previous video"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </button>
+      <button
+        class="gallery-nav gallery-nav-next"
+        id="galleryNext"
+        aria-label="Next video"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Dots Navigation -->
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-16 reveal">
+      <div
+        class="glass-card inline-block p-8 shadow-luxury bg-gradient-to-br from-gold/5 to-amber/5"
+      >
+        <h3 class="serif text-3xl font-bold text-ink mb-3">
+          Experience the Craft Yourself
+        </h3>
+        <p class="text-slate mb-6 max-w-lg">
+          Join us on this journey from Caribbean grove to your glass. Limited
+          allocation available.
+        </p>
+        <a href="#contact" class="btn btn-primary">Reserve Your Bottle</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Elements -->
+  <div
+    class="absolute top-10 left-10 w-64 h-64 bg-gold/5 rounded-full blur-3xl"
+  ></div>
+  <div
+    class="absolute bottom-10 right-10 w-96 h-96 bg-amber/5 rounded-full blur-3xl"
+  ></div>
+</section>
+
+
+<!-- ========================================
+     TESTIMONIALS SECTION
+     ======================================== -->
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="py-20 md:py-32 relative overflow-hidden">
+  <div class="wrap">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p class="text-gold uppercase tracking-[0.3em] text-sm font-semibold mb-3">Testimonials</p>
+      <h2 class="serif text-5xl md:text-6xl font-black text-ink mb-6">What Connoisseurs Say</h2>
+      <p class="text-xl text-slate leading-relaxed elegant">
+        Discover why JoyFruits is becoming the talk of the spirits world.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card reveal">
+        <div class="relative z-10">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <p class="text-ink/80 leading-relaxed mb-6 elegant text-lg">
+            Absolutely stunning. The mango character is vibrant yet refined—nothing artificial, 
+            just pure tropical essence. This is craft distilling at its finest.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold/20 to-amber/20 flex items-center justify-center text-2xl">
+              👨‍💼
+            </div>
+    <div>
+              <div class="font-semibold text-ink">Marcus Rivera</div>
+              <div class="text-sm text-slate">Spirits Curator, Barcelona</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card reveal">
+        <div class="relative z-10">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <p class="text-ink/80 leading-relaxed mb-6 elegant text-lg">
+            I've tasted rakias from the Balkans to the Med, but this Caribbean expression is 
+            something special. Smooth, complex, and utterly delicious.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold/20 to-amber/20 flex items-center justify-center text-2xl">
+              👩
+    </div>
+    <div>
+              <div class="font-semibold text-ink">Sofia Tomić</div>
+              <div class="text-sm text-slate">Sommelier, Zagreb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card reveal">
+        <div class="relative z-10">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+          <p class="text-ink/80 leading-relaxed mb-6 elegant text-lg">
+            A revelation! Perfect balance between fruit-forward character and sophisticated finish. 
+            My guests can't get enough of it.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold/20 to-amber/20 flex items-center justify-center text-2xl">
+              👨‍🍳
+    </div>
+    <div>
+              <div class="font-semibold text-ink">Jean-Luc Moreau</div>
+              <div class="text-sm text-slate">Mixologist, Paris</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================
+     CTA SECTION
+     ======================================== -->
+
+<!-- CTA SECTION -->
+<section id="buy" class="py-24 md:py-32 bg-gradient-to-br from-gold/10 via-amber/5 to-brass/10 relative overflow-hidden">
+  <div class="wrap">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gold/20 border border-gold/40 mb-6">
+        <svg class="w-5 h-5 text-gold animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+        </svg>
+        <span class="text-sm font-bold text-ink uppercase tracking-wider">Exclusive Product</span>
+      </div>
+      
+      <h2 class="serif text-5xl md:text-6xl lg:text-7xl font-black text-ink mb-6">
+        Get in Touch<br>
+        <span class="bg-gradient-to-r from-gold via-amber to-brass bg-clip-text text-transparent">Inquire Now</span>
+      </h2>
+      
+      <p class="text-xl md:text-2xl text-slate leading-relaxed mb-4 elegant">
+        Interested in JoyFruits? Contact us for availability and details.
+      </p>
+      
+      <p class="text-lg text-ink/70 mb-10 max-w-2xl mx-auto">
+        Each bottle is individually crafted with care. Reach out to learn more about 
+        this exclusive Caribbean treasure and distribution options.
+      </p>
+      
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a id="cta" href="#contact" class="btn btn-primary text-lg px-8 py-4">
+          Contact Us
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+        <a href="#product" class="btn btn-secondary text-lg px-8 py-4">
+          Learn More
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-6 max-w-2xl mx-auto mt-16 pt-12 border-t border-gold/20">
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent mb-2">5000+</div>
+          <div class="text-sm text-slate uppercase tracking-wider">Bottles Sold</div>
+        </div>
+        <div class="text-center border-x border-gold/20">
+          <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent mb-2">15+</div>
+          <div class="text-sm text-slate uppercase tracking-wider">Countries</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl md:text-5xl font-black bg-gradient-to-r from-gold to-brass bg-clip-text text-transparent mb-2">5★</div>
+          <div class="text-sm text-slate uppercase tracking-wider">Avg Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Decorative elements -->
+  <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10">
+    <div class="absolute top-10 left-10 w-64 h-64 bg-gold rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-amber rounded-full blur-3xl"></div>
+  </div>
+</section>
+
+<!-- ========================================
+     FOOTER SECTION
+     ======================================== -->
+
+<!-- FOOTER -->
+<footer id="contact" class="relative bg-gradient-to-b from-parchment to-parchmentDeep border-t border-gold/20">
+  <div class="wrap py-16 md:py-20">
+    <div class="grid lg:grid-cols-12 gap-12">
+      <!-- Brand Column -->
+      <div class="lg:col-span-4">
+        <a href="#hero" class="inline-block mb-4 hover:opacity-80 transition-opacity">
+          <img src="/assets/logo/joyfruits-compact.svg" 
+               alt="JoyFruits Logo" 
+               class="h-14 w-auto">
+        </a>
+        <p class="text-ink/70 leading-relaxed mb-6 max-w-sm elegant">
+          Ultra-premium Caribbean rakia. Handcrafted from sun-ripened mangoes in the Dominican Republic.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="w-10 h-10 rounded-full bg-gold/10 hover:bg-gold/20 flex items-center justify-center transition-colors" aria-label="Instagram">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gold/10 hover:bg-gold/20 flex items-center justify-center transition-colors" aria-label="Facebook">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gold/10 hover:bg-gold/20 flex items-center justify-center transition-colors" aria-label="Twitter">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="lg:col-span-2">
+        <h3 class="serif text-xl font-bold text-ink mb-4">Explore</h3>
+        <ul class="space-y-3">
+          <li><a href="#product" class="text-ink/70 hover:text-gold transition-colors">Product</a></li>
+          <li><a href="#process" class="text-ink/70 hover:text-gold transition-colors">The Craft</a></li>
+          <li><a href="#voyage" class="text-ink/70 hover:text-gold transition-colors">The Voyage</a></li>
+          <li><a href="#testimonials" class="text-ink/70 hover:text-gold transition-colors">Reviews</a></li>
+        </ul>
+      </div>
+      
+      <!-- Discover -->
+      <div class="lg:col-span-3">
+        <h3 class="serif text-xl font-bold text-ink mb-4">Discover</h3>
+        <ul class="space-y-3">
+          <li><a href="#hero" class="text-ink/70 hover:text-gold transition-colors">Our Story</a></li>
+          <li><a href="#process" class="text-ink/70 hover:text-gold transition-colors">The Craft Process</a></li>
+          <li><a href="#voyage" class="text-ink/70 hover:text-gold transition-colors">Heritage Route</a></li>
+          <li><a href="#product" class="text-ink/70 hover:text-gold transition-colors">Tasting Notes</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="lg:col-span-3">
+        <h3 class="serif text-xl font-bold text-ink mb-4">Get in Touch</h3>
+        <div class="space-y-3 text-ink/70">
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <a href="mailto:hello@joyfruits.com" class="hover:text-gold transition-colors">hello@joyfruits.com</a>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span>Puerto Plata<br>Dominican Republic</span>
+          </div>
+        </div>
+        
+        <!-- Newsletter -->
+        <div class="mt-6">
+          <p class="text-sm text-ink/60 mb-3" id="newsletterLabel">Join our exclusive list</p>
+          <div class="flex gap-2" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Your email" class="flex-1 px-4 py-2 rounded-full bg-white/50 border border-gold/20 focus:outline-none focus:border-gold text-sm">
+            <button id="newsletterBtn" class="btn btn-primary text-sm px-6 py-2" aria-label="Subscribe">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+          </div>
+          <p id="newsletterSuccess" class="text-sm text-gold mt-3 hidden">✓ Thanks! We'll be in touch soon.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="mt-12 pt-8 border-t border-gold/20 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink/60">
+      <p>© <span id="year"></span> JoyFruits. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <span>🍃 Sustainable Production</span>
+        <span>🌊 Heritage Craft</span>
+        <span>🏆 Award Winning</span>
+      </div>
+      <p class="text-xs">Please drink responsibly. 18+</p>
+    </div>
+  </div>
+</footer>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

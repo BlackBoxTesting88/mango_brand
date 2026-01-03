@@ -17,6 +17,7 @@ function initApp() {
   initGallerySlider();
   initFlavorModal();
   initMobileMenu();
+  initLanguageSwitcher();
   init3DBottle();
   initSmoothScroll();
   initConfetti();
@@ -28,6 +29,26 @@ function initApp() {
 
   console.log("✅ App initialized successfully!");
 }
+
+// Ensure initialization when sections are already in the DOM (static build)
+(function ensureAppInitOnce() {
+  if (window.__joyAppInitHookAdded) return;
+  window.__joyAppInitHookAdded = true;
+
+  const start = () => {
+    if (window.__joyAppInitialized) return;
+    window.__joyAppInitialized = true;
+    if (typeof initApp === "function") {
+      initApp();
+    }
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start, { once: true });
+  } else {
+    start();
+  }
+})();
 
 // ============ YEAR ============
 function initYear() {
@@ -443,6 +464,42 @@ function initMobileMenu() {
     if (e.key === "Escape" && mobileMenu?.classList.contains("active")) {
       closeMenu();
     }
+  });
+}
+
+// ============ LANGUAGE SWITCHER ============
+function initLanguageSwitcher() {
+  const buttons = document.querySelectorAll("[data-lang-switch]");
+  if (!buttons.length) return;
+
+  const supported = ["en", "sr"];
+  const current = (window.currentLang || "en").toLowerCase();
+
+  function navigateToLang(lang) {
+    if (!supported.includes(lang)) return;
+    const hash = window.location.hash || "";
+    const targetUrl = `/${lang}/${hash ? hash : ""}`;
+    window.location.assign(targetUrl);
+  }
+
+  buttons.forEach((btn) => {
+    const targetLang = (btn.getAttribute("data-lang-switch") || "").toLowerCase();
+    if (!targetLang) return;
+
+    if (targetLang === current) {
+      btn.classList.add("is-active");
+      btn.setAttribute("aria-current", "true");
+    } else {
+      btn.classList.remove("is-active");
+      btn.removeAttribute("aria-current");
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (targetLang !== current) {
+        navigateToLang(targetLang);
+      }
+    });
   });
 }
 
