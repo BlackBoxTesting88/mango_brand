@@ -121,6 +121,7 @@ body {
   font-weight: 300;
 }
 
+
 /* Headlines - Modern Professional Font */
 h1,
 h1.serif,
@@ -320,6 +321,7 @@ h6.serif {
   color: transparent;
   text-shadow: 0 4px 24px rgba(212, 175, 55, 0.25);
 }
+
 @keyframes logoIntro {
   0% {
     opacity: 0;
