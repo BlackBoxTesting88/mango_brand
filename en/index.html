@@ -12,6 +12,12 @@
     <link rel="icon" type="image/svg+xml" href="/assets/logo/joyfruits-favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/joyfruits-icon.svg" />
     <meta name="theme-color" content="#D4AF37" />
+    <link rel="preload" href="/assets/images/three-beach-bottles-light-768w.webp" as="image" type="image/webp" media="(max-width: 1024px)" fetchpriority="high" />
+    <link rel="preload" href="/assets/images/three-beach-bottles-light.webp" as="image" type="image/webp" media="(min-width: 1025px)" fetchpriority="high" />
+    <link rel="preload" href="/assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Nunito-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Nunito-Light.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/css/tailwind.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/header.css" />
@@ -145,7 +151,10 @@
 <section id="hero" class="relative overflow-hidden min-h-screen">
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
-    <img src="/assets/images/PHOTO-2025-12-26-14-15-59.jpg" 
+    <img src="/assets/images/three-beach-bottles-light.webp"
+         srcset="/assets/images/three-beach-bottles-light-480w.webp 480w, /assets/images/three-beach-bottles-light-768w.webp 768w, /assets/images/three-beach-bottles-light-1280w.webp 1280w, /assets/images/three-beach-bottles-light.webp 1368w"
+         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+         width="1368" height="912" fetchpriority="high" decoding="async"
          alt="JoyFruits Background" 
          class="w-full h-full object-cover"
          style="filter: brightness(0.9);">
@@ -373,12 +382,78 @@
         <div class="glass-card shadow-luxury h-full">
           <div class="relative rounded-2xl overflow-hidden" style="min-height: 600px; height: 100%;">
             <div id="voyageSlider" class="slider h-full" aria-label="JoyFruits gallery">
-              <div class="slide is-active"><img src="/assets/images/PHOTO-2025-12-26-14-15-59.jpg" alt="JoyFruits Caribbean Craft" loading="lazy"></div>
-              <div class="slide"><img src="/assets/images/PHOTO-2025-12-26-14-16-23.jpg" alt="JoyFruits Production Process" loading="lazy"></div>
-              <div class="slide"><img src="/assets/images/PHOTO-2025-12-26-14-20-02.jpg" alt="JoyFruits Premium Quality" loading="lazy"></div>
-              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 16.45.00.png" alt="JoyFruits Production Scene" loading="lazy"></div>
-              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 17.51.50.png" alt="JoyFruits Distillery" loading="lazy"></div>
-              <div class="slide"><img src="/assets/images/Screenshot 2025-12-26 at 17.52.15.png" alt="JoyFruits Craftsmanship" loading="lazy"></div>
+              <div class="slide is-active">
+                <img
+                  src="/assets/images/three-beach-bottles-light.webp"
+                  srcset="/assets/images/three-beach-bottles-light-480w.webp 480w, /assets/images/three-beach-bottles-light-768w.webp 768w, /assets/images/three-beach-bottles-light-1280w.webp 1280w, /assets/images/three-beach-bottles-light.webp 1368w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1368"
+                  height="912"
+                  alt="JoyFruits Caribbean Craft"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="/assets/images/three-beach-bottles-light.webp"
+                  srcset="/assets/images/three-beach-bottles-light-480w.webp 480w, /assets/images/three-beach-bottles-light-768w.webp 768w, /assets/images/three-beach-bottles-light-1280w.webp 1280w, /assets/images/three-beach-bottles-light.webp 1368w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1368"
+                  height="912"
+                  alt="JoyFruits Production Process"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="/assets/images/mango-herbas-maracuja-bottles.webp"
+                  srcset="/assets/images/mango-herbas-maracuja-bottles-480w.webp 480w, /assets/images/mango-herbas-maracuja-bottles-768w.webp 768w, /assets/images/mango-herbas-maracuja-bottles.webp 1280w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1280"
+                  height="960"
+                  alt="JoyFruits Premium Quality"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="/assets/images/joy-fruit-mango.webp"
+                  srcset="/assets/images/joy-fruit-mango-480w.webp 480w, /assets/images/joy-fruit-mango-768w.webp 768w, /assets/images/joy-fruit-mango-1280w.webp 1280w, /assets/images/joy-fruit-mango.webp 1855w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1855"
+                  height="1051"
+                  alt="JoyFruits Production Scene"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="/assets/images/bar-bottle.webp"
+                  srcset="/assets/images/bar-bottle-480w.webp 480w, /assets/images/bar-bottle-768w.webp 768w, /assets/images/bar-bottle-1280w.webp 1280w, /assets/images/bar-bottle.webp 1863w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1863"
+                  height="1044"
+                  alt="JoyFruits Distillery"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="/assets/images/three-beach-bottles-light.webp"
+                  srcset="/assets/images/three-beach-bottles-light.webp 1368w"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 40vw"
+                  width="1368"
+                  height="912"
+                  alt="JoyFruits Craftsmanship"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <button class="slider-nav prev" aria-label="Previous image">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -999,7 +1074,7 @@
                 muted
                 onvolumechange="this.muted=true"
                 preload="metadata"
-                poster="/assets/images/PHOTO-2025-12-26-14-15-59.jpg"
+                poster="/assets/images/three-beach-bottles-light.webp"
                 class="gallery-video"
               >
                 <source
@@ -1029,7 +1104,7 @@
                 muted
                 onvolumechange="this.muted=true"
                 preload="metadata"
-                poster="/assets/images/PHOTO-2025-12-26-14-16-23.jpg"
+                poster="/assets/images/three-beach-bottles-light.webp"
                 class="gallery-video"
               >
                 <source
@@ -1059,7 +1134,7 @@
                 muted
                 onvolumechange="this.muted=true"
                 preload="metadata"
-                poster="/assets/images/PHOTO-2025-12-26-14-20-02.jpg"
+                poster="/assets/images/mango-herbas-maracuja-bottles.webp"
                 class="gallery-video"
               >
                 <source
