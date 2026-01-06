@@ -63,7 +63,6 @@
 
 .flavor-btn:hover {
   background: #b8860b;
-  transform: scale(1.1);
 }
 
 .flavor-card.active .flavor-btn {
@@ -99,7 +98,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 300px;
   background: linear-gradient(135deg, #f0f8ff 0%, #e8f4f8 50%, #e0f0f5 100%);
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 8px;
