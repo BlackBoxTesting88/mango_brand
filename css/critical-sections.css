@@ -293,7 +293,7 @@
 }
 @media (max-width: 768px) {
   .gallery-slider-container {
-    padding: 0 40px;
+    padding: 0 0;
   }
   .gallery-slider {
     gap: 1.5rem;
