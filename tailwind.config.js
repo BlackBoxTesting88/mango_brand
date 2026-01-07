@@ -5,7 +5,7 @@ module.exports = {
     "./en/index.html",
     "./sr/index.html",
     "./es/index.html",
-    "./sections/**/*.{html,js}",
+    // "./sections/**/*.{html,js}",
     "./js/**/*.js",
   ],
   theme: {
